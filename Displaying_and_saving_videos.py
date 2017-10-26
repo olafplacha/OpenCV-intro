@@ -1,22 +1,11 @@
-
-# coding: utf-8
-
-# In[45]:
-
 #importing useful libraries
 import cv2
 import numpy as np
-
-
-# In[46]:
 
 #capturing video from video camera
 cap = cv2.VideoCapture(0)
 #saving the video
 out = cv2.VideoWriter('output.avi', -1, 10.0, (640,480))
-
-
-# In[47]:
 
 while True:
     ret, frame = cap.read()
