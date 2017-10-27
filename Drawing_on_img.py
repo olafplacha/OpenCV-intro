@@ -1,25 +1,12 @@
-
-# coding: utf-8
-
-# In[2]:
-
 #import useful libraries
 import numpy as np
 import cv2
 
-
-# In[81]:
-
 #reading in the image
 img = cv2.imread('watch.jpg', cv2.IMREAD_COLOR)
 
-
-# In[82]:
-
+#display img's size
 img.shape
-
-
-# In[83]:
 
 #drawing a line on the img
 cv2.line(img, (0,0), (100,100), (255,255,255), 10)
@@ -39,9 +26,3 @@ cv2.imshow('image', img)
 cv2.waitKey(0)
 #if any key pressed, close down all the windows
 cv2.destroyAllWindows()
-
-
-# In[ ]:
-
-
-
